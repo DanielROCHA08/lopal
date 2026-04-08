@@ -7,5 +7,16 @@ function conjunto(){
     console.log(letras.size);
     console.log(letras.has("a"));
 
+    //delete() é um método para remover um elemento do conjunto
+    letras.delete("c");
+    console.log(letras);
+
+    for (const x of letras.values()){
+        console.log(x);
+    }
+
+    for (const x of letras.keys()){
+        console.log(x);
+    }
 }
 conjunto();
